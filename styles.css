@@ -1,0 +1,105 @@
+/* Basic global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+img {
+    display: block; 
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto; 
+    border-radius: 10px; 
+   
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid beige;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid beige;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: darkslategrey;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/*References: 
+https://www.w3schools.com/cssref/sel_hover.php
+https://blog.logrocket.com/style-forms-css/
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+*/
+

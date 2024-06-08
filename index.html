@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment 1</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Kush's Pizza Corner!</h1>
+    </header>
+    
+    <main>
+        <!-- A simple poster -->
+        <img src="ad.jpg" alt="Pizza Poster" class="poster">
+        
+        <section>
+        
+            <h2>Order Your Pizza</h2>
+                <fieldset>
+
+                    <!-- Details to fill up for order -->
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address"></textarea><br>
+                    
+                    <label for="delivery_date">Delivery Date:</label>
+                    <input type="date" id="delivery_date" name="delivery_date"><br>
+                    
+                    <label for="delivery_time">Delivery Time:</label>
+                    <input type="time" id="delivery_time" name="delivery_time"><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Pizza Details</legend>
+
+                    <!-- Select number of pizza -->
+                    <label for="num_pizzas">Number of Pizzas:</label>
+                    <input type="number" id="num_pizzas" name="num_pizzas" min="1" required><br>
+                    
+                    <!-- Select pizza size -->
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="options">Select options</option>
+                        <option value="small">Small (6 slices)</option>
+                        <option value="medium">Medium (8 slices)</option>
+                        <option value="large">Large (10 slices)</option>
+                    </select><br>
+                    
+                    <!-- Select pizza shape -->
+                    <label for="shape">Shape:</label>
+                    <select name="shape" id="shape" required>
+                        <option value="options">Select options</option>
+                        <option value="round">Round</option>
+                        <option value="square">Square</option>
+                        <option value="rectangular">Rectangular</option>
+                    </select><br>
+                    
+                    <!-- Select toppings options -->
+                    <label for="Toppings">Toppings:</label>
+                    <select id="Toppings" name="Toppings" required>
+                        <option value="options">Select options</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="hawaiian">Hawaiian (Ham & Pineapple)</option>
+                        <option value="bbq">BBQ Meatlovers (Beef/Chicken)</option>
+                        <option value="broccoli ">Broccoli</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="onions">Onions</option>
+                        <option value="red pepper">Red Pepper</option>
+                        <option value="olive">Olive</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="dumplings">Dumplings (Chicken)</option>
+                    </select><br>
+                    
+                    <!-- Select crust options -->
+                    <label for="crust">Crust Type:</label>
+                    <select id="crust" name="crust" required>
+                        <option value="options">Select options</option>
+                        <option value="Chicago-Style: Thick, Buttery, and Crispy Crust">Chicago-Style: Thick, Buttery, and Crispy Crust</option>
+                        <option value="New York-Style: Chewy and Crispy Delights">New York-Style: Chewy and Crispy Delights</option>
+                        <option value="Neapolitan: A Classic Combo of Crispiness and Charness">Neapolitan: A Classic Combo of Crispiness and Charness</option>
+                        <option value="Deep-Dish: A Puffy and Toasty Crust">Deep-Dish: A Puffy and Toasty Crust</option>
+                        <option value="Detroit-Style: Go-to Thick Cuts">Detroit-Style: Go-to Thick Cuts</option>
+                        <option value="Flatbread: Crack-Like Slices">Flatbread: Crack-Like Slices</option>
+                        <option value="Gluten-Free: Crumbly and Just as Delicious">Gluten-Free: Crumbly and Just as Delicious</option>
+                        <option value="Sicilian: A Spongy, Flavor Bomb">Sicilian: A Spongy, Flavor Bomb</option>
+                        <option value="Stuffed Crust: A Cheesy Surprise">Stuffed Crust: A Cheesy Surprise</option>
+                    </select><br>
+                    
+                     <!-- Select cheese options -->
+                    <label for="cheese">Cheese Type:</label>
+                    <select id="cheese" name="cheese" required>
+                        <option value="options">Select options</option>
+                        <option value="mozzarella">Mozzarella</option>
+                        <option value="cheddar">Cheddar</option>
+                        <option value="parmesan">Parmesan</option>
+                        <option value="goat cheese">Goat Cheese</option>
+                        <option value="ricotta">Ricotta</option>
+                        <option value="provolone">Provolone</option>
+                        <option value="gouda">Gouda</option>
+                        <option value="gruyere">Gruyere</option>
+                    </select><br>
+                    
+                    <!-- Select sauce options -->
+                    <label for="sauce">Sauce:</label>
+                    <select id="sauce" name="sauce" required>
+                        <option value="options">Select options</option>
+                        <option value="marinara">Marinara</option>
+                        <option value="alfredo">Alfredo</option>
+                        <option value="pesto">Pesto</option>
+                        <option value="carbonara">Carbonara</option>
+                        <option value="arrabiata">Arrabiata</option>
+                        <option value="bbq">BBQ</option>
+                        <option value="bolognese">Bolognese</option>
+                        <option value="pomodoro">Pomodoro</option>
+
+                    </select><br>
+                    
+                    <!-- Select tips -->
+                    <label for="tip">Tip Amount:</label>
+                    <input type="number" id="tip" name="tip" min="0" step="0.01"><br>
+                    
+                   <!-- Select delivery options -->
+                   <fieldset>
+                    <legend>Delivery Options:</legend>
+                    <input type="radio" id="take-out" name="delivery" value="take-out" required>
+                    <label for="take-out">Take-out</label><br>
+                    
+                    <input type="radio" id="delivery" name="delivery" value="delivery" required>
+                    <label for="delivery">Delivery</label><br>
+                    
+                    <input type="radio" id="eat-in" name="delivery" value="eat-in" required>
+                    <label for="eat-in">Eat-In</label><br>
+                </fieldset>
+
+                <!-- Place Order and Reset Form buttons -->
+                <input type="submit" value="Place Order">
+                <input type="reset" value="Reset Form">
+
+            </form>
+        </section>
+    </main>
+    
+     <!-- Footer section -->
+    <footer>
+        <p>Contact us at 1-437-879-5169 for any inquiries.</p><br>
+    </footer>
+
+</body>
+</html>
+
+ <!-- References
+  https://www.w3schools.com/w3css/w3css_input.asp
+   -->
